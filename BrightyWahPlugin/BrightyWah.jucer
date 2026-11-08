@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="fp1hkE" name="BrightyWah" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginManufacturer="LIM" pluginManufacturerCode="LIM!">
+  <MAINGROUP id="b1N6uN" name="BrightyWah">
+    <GROUP id="{C2256A47-1471-070E-1ADA-3973F57AD8D4}" name="Source">
+      <FILE id="y4TviT" name="PluginParameters.h" compile="0" resource="0"
+            file="Source/PluginParameters.h"/>
+      <FILE id="GhMp1X" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="jYEsaq" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <GROUP id="{B27A206F-3CF7-6AAF-31A8-7E19EFF3568F}" name="Assets">
+        <FILE id="z2dBzH" name="limLogo.png" compile="0" resource="1" file="Source/limLogo.png"/>
+        <FILE id="SZEpg6" name="backBrightyWah2.jpeg" compile="0" resource="1"
+              file="Source/backBrightyWah2.jpeg"/>
+      </GROUP>
+      <GROUP id="{85346B24-B3E1-9D0F-ACD6-D0BEE20F7A01}" name="GUI">
+        <FILE id="N6Zsxe" name="MyTheme.cpp" compile="1" resource="0" file="Source/MyTheme.cpp"/>
+        <FILE id="lmGzHY" name="MyTheme.h" compile="0" resource="0" file="Source/MyTheme.h"/>
+        <FILE id="QmRDra" name="PluginEditor.cpp" compile="1" resource="0"
+              file="Source/PluginEditor.cpp"/>
+        <FILE id="O7s3r4" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      </GROUP>
+      <GROUP id="{E8E46263-E7FC-CD2D-FE10-7556706D7F7C}" name="DSP">
+        <FILE id="hriplL" name="FeatureExtraction.cpp" compile="1" resource="0"
+              file="Source/FeatureExtraction.cpp"/>
+        <FILE id="NBZtGA" name="FeatureExtraction.h" compile="0" resource="0"
+              file="Source/FeatureExtraction.h"/>
+        <FILE id="uYYxaO" name="LPfilter.cpp" compile="1" resource="0" file="Source/LPfilter.cpp"/>
+        <FILE id="MaYtG8" name="LPfilter.h" compile="0" resource="0" file="Source/LPfilter.h"/>
+        <FILE id="qYy2dC" name="WahFilter.cpp" compile="1" resource="0" file="Source/WahFilter.cpp"/>
+        <FILE id="DEjohe" name="WahFilter.h" compile="0" resource="0" file="Source/WahFilter.h"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="BrightyWah"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="BrightyWah"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../../../JUCE-master/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../../../../JUCE-master/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
